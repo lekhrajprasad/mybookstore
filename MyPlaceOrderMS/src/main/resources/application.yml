@@ -1,0 +1,31 @@
+spring:
+    datasource:
+        hikari:
+            connectionTimeout: 20000
+            maximumPoolSize: 5
+        password: password
+        url: jdbc:h2:file:./data/jlcordersdb
+        username: sa
+        initialize: false
+    jpa:
+        show-sql: true
+        hibernate.ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+    h2.console.enabled: true
+    application:
+        name: MyPlaceOrderMS
+
+server:
+    port: 7000
+
+logging:
+    level:
+        root: DEBUG
+        org.hibernate.SQL: DEBUG
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    pattern:
+        console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
+#To see the h2 db console. works only when application is running on server port 8080
+#http://localhost:9000/h2-console

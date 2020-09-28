@@ -1,0 +1,3 @@
+MyUserRatingMS Microservice
+h2database
+swagger

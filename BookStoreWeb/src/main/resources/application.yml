@@ -1,0 +1,15 @@
+management.endpoints.web.exposure.include: '*' #Enabling actuator endpoint
+spring:
+    boot.admin.client.url: http://localhost:1234 #Boot Admin configuration, Actuator Admin is running on port 8080
+    application:
+        name: MyBookStoreWeb
+
+server:
+    port: 5000
+
+logging:
+    level:
+        root: INFO
+        org.apache: INFO
+    pattern:
+        console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'

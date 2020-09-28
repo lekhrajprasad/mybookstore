@@ -1,0 +1,37 @@
+gradle/
+target/
+data/
+build/
+.gradle/
+.settings/
+out/
+*.iml
+*.*/*.iml
+
+*.*/*.class
+
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore Logs
+logs/
+*.*/*.log
+*.log
+
+# Ignore the build directory
+dist/
+
+# The file containing environment variables 
+.env
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.sw*
+
+.classpath
+.project
+
+
+
+#execute the command git config --global core.excludesfile ~/.gitignore
