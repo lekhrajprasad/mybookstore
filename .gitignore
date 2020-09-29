@@ -33,6 +33,8 @@ dist/
 
 .classpath
 .project
+gradlew
+gradlew.bat
 
 
 
