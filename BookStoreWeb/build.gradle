@@ -16,7 +16,6 @@ configurations.all{
 }
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	implementation 'jstl:jstl:1.2'
@@ -24,6 +23,10 @@ dependencies {
 	implementation 'org.webjars:bootstrap:4.5.2'
 	implementation 'org.webjars:jquery:3.5.1'
 
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'de.codecentric:spring-boot-admin-starter-client:2.3.0' //Actuator Boot Admin dependency
+	
 	//implementation 'javax.xml.bind:jaxb-api:2.3.1'
 	//runtime 'com.sun.xml.bind:jaxb-impl:2.3.1'
 	//runtime 'com.sun.xml.bind:jaxb-core:2.3.0.1'

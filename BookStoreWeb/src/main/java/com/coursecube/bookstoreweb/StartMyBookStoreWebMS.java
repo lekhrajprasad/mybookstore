@@ -1,4 +1,4 @@
-package com.coursecube;
+package com.coursecube.bookstoreweb;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

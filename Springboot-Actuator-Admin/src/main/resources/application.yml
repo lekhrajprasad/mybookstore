@@ -1,0 +1,17 @@
+server:
+    port: 1234
+
+spring:
+    application:
+        name: springboot-actuator-admin-app
+
+logging:
+    level:
+        root: INFO
+        org.hibernate.SQL: DEBUG
+        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    pattern:
+        console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
+#To see the h2 db console. works only when application is running on server port 8080
+#http://localhost:8080/h2-console
+
