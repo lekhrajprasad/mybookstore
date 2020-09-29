@@ -1,0 +1,31 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.3.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+group = 'com.coursecube.bookprice'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '14'
+
+repositories {
+	mavenCentral()
+}
+configurations.all{
+	//exclude module: 'spring-boot-starter-logging'
+}
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtime 'com.h2database:h2'
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'//Swagger
+
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'de.codecentric:spring-boot-admin-starter-client:2.3.0' //Actuator Boot Admin dependency
+		
+}
+
+test {
+	useJUnitPlatform()
+}

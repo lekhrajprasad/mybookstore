@@ -1,4 +1,4 @@
-package com.coursecube;
+package com.coursecube.bookprice;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

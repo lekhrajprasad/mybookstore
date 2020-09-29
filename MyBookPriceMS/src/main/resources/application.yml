@@ -1,0 +1,37 @@
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*' #Enabling actuator endpoint
+spring:
+    boot.admin.client.url: http://localhost:1234 #Boot Admin configuration, Actuator Admin is running on port 8080
+    datasource:
+        hikari:
+            connectionTimeout: 20000
+            maximumPoolSize: 5
+        password: password
+        url: jdbc:h2:file:./data/jlcbookpricedb
+        username: sa
+        initialize: false
+    jpa:
+        show-sql: true
+        hibernate.ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+    h2.console.enabled: true
+    application:
+        name: MyBookPriceMS
+
+server:
+    port: 9000
+
+logging:
+    level:
+        root: INFO
+        com.coursecube: DEBUG
+        de.codecentric: DEBUG
+    pattern:
+        console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
+#To see the h2 db console. works only when application is running on server port 8080
+#http://localhost:9000/h2-console
