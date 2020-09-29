@@ -1,3 +1,5 @@
+bin/default/
+bin/
 gradle/
 target/
 data/

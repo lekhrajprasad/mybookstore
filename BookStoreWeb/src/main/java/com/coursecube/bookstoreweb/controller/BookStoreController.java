@@ -18,6 +18,7 @@ import com.coursecube.bookstoreweb.service.BookStoreService;
 @Controller
 public class BookStoreController {
 	static Logger log = LoggerFactory.getLogger(BookStoreController.class);
+	
 	@Autowired
 	BookStoreService bookStoreService;
 
