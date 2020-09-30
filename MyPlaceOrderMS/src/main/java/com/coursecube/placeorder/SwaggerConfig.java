@@ -1,4 +1,4 @@
-package com.coursecube;
+package com.coursecube.placeorder;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -34,8 +34,8 @@ public class SwaggerConfig {
         List<VendorExtension> vendorExtensions = new ArrayList<>();
 
         ApiInfo apiInfo = new ApiInfo(
-                "JLC Book Store API",
-                "Book Search API - part of JLC BOOk Store Application",
+                "Book Store API",
+                "Place Order API - part of BOOk Store Application",
                 "1.0",
                 "https://java-deep-dive.blogspot.com/ ",
                 contact,

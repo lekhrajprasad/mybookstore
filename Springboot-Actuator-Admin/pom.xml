@@ -5,10 +5,14 @@
 	<groupId>com.coursecube.springboot</groupId>
 	<artifactId>Springboot-Actuator-Admin</artifactId>
 	<version>1.0</version>
-	<!-- <packaging>jar</packaging> -->
+	<packaging>jar</packaging>
 	<name>Springboot-Actuator-Admin</name>
 	<url>http://www.coursecube.com</url>
-
+	<properties>
+		<java.version>14</java.version>
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
+	</properties>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -24,7 +28,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>SpringbootRestService-Lab20</finalName>
+		<finalName>Springboot-Actuator-Admin</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

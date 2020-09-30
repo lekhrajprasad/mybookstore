@@ -1,4 +1,4 @@
-package com.coursecube;
+package com.coursecube.placeorder;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ public class StartMyPlaceOrderMS implements CommandLineRunner {
     @Override
     public void run(String... args) {
         //Start-UP Tasks
-        log.info(" BookPriceMS - Launched.... ");
+        log.info("PlaceOrderMS - Launched.... ");
     }
 
 }
