@@ -3,7 +3,7 @@ package com.coursecube.placeorder.service;
 import com.coursecube.placeorder.dao.BookInventoryDAO;
 import com.coursecube.placeorder.dao.OrderDAO;
 import com.coursecube.placeorder.dao.OrderItemDAO;
-import com.coursecube.placeorder.dto.OrderInfo;
+import com.coursecube.placeorder.dto.OrderInfoDTO;
 import com.coursecube.placeorder.entity.BookInventory;
 import com.coursecube.placeorder.entity.Order;
 import com.coursecube.placeorder.entity.OrderItem;
@@ -28,7 +28,7 @@ public class OrderServiceImpl implements OrderService{
     BookInventoryDAO bookInventoryDAO;
 
     @Override
-    public void placeOrder(OrderInfo orderInfo) {
+    public void placeOrder(OrderInfoDTO orderInfo) {
         //4 task to do when you place the order
         //1. Insert Order - 1
         Order order = orderInfo.getOrder();

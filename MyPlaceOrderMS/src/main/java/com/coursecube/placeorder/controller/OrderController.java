@@ -1,6 +1,6 @@
 package com.coursecube.placeorder.controller;
 
-import com.coursecube.placeorder.dto.OrderInfo;
+import com.coursecube.placeorder.dto.OrderInfoDTO;
 import com.coursecube.placeorder.entity.Order;
 import com.coursecube.placeorder.service.OrderService;
 import org.slf4j.Logger;
@@ -24,7 +24,7 @@ public class OrderController {
     OrderService orderService;
 
     @PutMapping(value = "/placeOrder")
-    public void placeOrder(@RequestBody OrderInfo orderInfo){
+    public void placeOrder(@RequestBody OrderInfoDTO orderInfo){
         orderService.placeOrder(orderInfo);
     }
     

@@ -4,9 +4,9 @@ plugins {
 	id 'java'
 }
 
-group = 'com.coursecube.springboot'
+group = 'com.coursecube.placeorder'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = '14'
 
 repositories {
 	mavenCentral()
@@ -20,6 +20,9 @@ dependencies {
 	runtime 'com.h2database:h2'
 	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 		
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'de.codecentric:spring-boot-admin-starter-client:2.3.0' //Actuator Boot Admin dependency
 }
 
 test {

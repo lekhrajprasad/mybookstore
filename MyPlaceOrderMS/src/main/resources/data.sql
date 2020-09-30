@@ -1,4 +1,3 @@
-
 drop table IF EXISTS myorders;
 create table myorders(
 order_id int primary key,
