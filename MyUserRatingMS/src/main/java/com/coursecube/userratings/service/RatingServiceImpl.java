@@ -43,7 +43,7 @@ public class RatingServiceImpl implements RatingService{
 
 		//4. Update book rating in book search ms
 		RestTemplate bookSearchRestTemplate = new RestTemplate();
-		String endpoint = "http://localhost:8000/updateRating";
+		String endpoint = "http://localhost:8000/updateBookRating";
 		bookSearchRestTemplate.put(endpoint, bookRating);
 		
 	}
