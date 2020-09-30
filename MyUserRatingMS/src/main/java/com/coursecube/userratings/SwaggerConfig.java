@@ -1,4 +1,4 @@
-package com.coursecube;
+package com.coursecube.userratings;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -34,8 +34,8 @@ public class SwaggerConfig {
         List<VendorExtension> vendorExtensions = new ArrayList<>();
 
         ApiInfo apiInfo = new ApiInfo(
-                "JLC Book Store API",
-                "Book Rating API - part of JLC BOOk Store Application",
+                "Book Store API",
+                "Book Rating API - part of BOOk Store Application",
                 "1.0",
                 "https://java-deep-dive.blogspot.com/",
                 contact,

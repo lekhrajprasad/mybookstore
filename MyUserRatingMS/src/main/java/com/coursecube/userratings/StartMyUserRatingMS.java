@@ -1,4 +1,4 @@
-package com.coursecube;
+package com.coursecube.userratings;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ public class StartMyUserRatingMS implements CommandLineRunner {
     @Override
     public void run(String... args) {
         //Start-UP Tasks
-        log.info(" MyUserRatingMS - Launched.... ");
+        log.info("MyUserRatingMS - Launched.... ");
     }
 
 }
