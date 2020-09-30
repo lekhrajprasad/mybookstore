@@ -2,7 +2,6 @@ package com.coursecube.bookprice.service;
 
 import com.coursecube.bookprice.dao.BookPriceDAO;
 import com.coursecube.bookprice.entity.BookPrice;
-import com.coursecube.bookprice.exception.BookIDNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,13 +20,13 @@ public class BookPriceServiceImpl implements BookPriceService{
 
     @Override
     public BookPrice getBookPriceById(Integer bookId) {
+        BookPrice bookPrice=null;
         log.info("--BookPriceServiceImpl--getBooPriceById()--");
         Optional<BookPrice> opt = bookPriceDAO.findById(bookId);
         if(opt.isPresent()){
-            return opt.get();
-        }else{
-            throw new BookIDNotFoundException();
+            bookPrice = opt.get();
         }
+        return bookPrice;
     }
 
     @Override
