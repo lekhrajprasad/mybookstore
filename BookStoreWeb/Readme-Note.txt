@@ -1,3 +1,0 @@
-BookStoreWeb Microservice
-h2database
-swagger
