@@ -45,7 +45,7 @@ public class OrderServiceImpl implements OrderService{
         //4. Update BookSearchMS BookInventry-N
         //TODO: Need to improve this
         RestTemplate bootserachRest = new RestTemplate();
-        String endPoint = "http://localhost:8000/updateBookInventry";
+        String endPoint = "http://localhost:8000/updateBookInventory";
         for(OrderItem orderItem:itemList){
             Integer bookId = orderItem.getBookId();
             BookInventory bookInventory = bookInventoryDAO.findById(bookId).get();

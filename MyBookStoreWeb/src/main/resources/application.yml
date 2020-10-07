@@ -13,8 +13,8 @@ server:
 
 logging:
     level:
-        root: INFO
+        root: WARN
         com.coursecube: DEBUG
-        de.codecentric: DEBUG
+        de.codecentric: WARN
     pattern:
         console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'

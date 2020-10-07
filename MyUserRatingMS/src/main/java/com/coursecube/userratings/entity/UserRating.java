@@ -16,9 +16,18 @@ public class UserRating {
 		super();
 	}
 
+	public UserRating(String userId, double rating, String review, Integer bookId) {
+		super();
+		this.userId = userId;
+		this.rating = rating;
+		this.review = review;
+		this.bookId = bookId;
+	}
+
 	@Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "rating_item_id_generator")
-    @SequenceGenerator(name = "rating_item_id_generator", sequenceName = "myrating_item_id_gen", initialValue = 1, allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "rating_item_id_generator")
+    //@SequenceGenerator(name = "rating_item_id_generator", sequenceName = "myrating_item_id_gen", initialValue = 1, allocationSize = 1)
     @Column(name = "rating_id")
     private Integer ratingId;
 

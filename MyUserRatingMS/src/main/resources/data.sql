@@ -16,7 +16,7 @@ number_of_searches int
 insert into myuserratings values(1,101,'U-11',3.5,'Excellent');
 insert into myuserratings values(2,102,'U-12',3.5,'Good');
 insert into myuserratings values(3,101,'U-13',3.5,'Excellent');
-insert into myuserratings values(4,103,'U-11',3.5,'Good');
+--insert into myuserratings values(4,103,'U-11',3.5,'Good');
 insert into myuserratings values(5,104,'U-12',3.5,'Excellent');
 
 insert into mybookratings values(101,3.5,99);

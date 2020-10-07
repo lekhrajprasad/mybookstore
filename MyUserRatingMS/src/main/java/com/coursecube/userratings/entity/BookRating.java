@@ -23,8 +23,8 @@ public class BookRating {
 	}
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "bookrating_id_generator")
-    @SequenceGenerator(name = "bookrating_id_generator", sequenceName = "bookrating_id_gen", initialValue = 110, allocationSize = 1)
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "bookrating_id_generator")
+    //@SequenceGenerator(name = "bookrating_id_generator", sequenceName = "bookrating_id_gen", initialValue = 110, allocationSize = 1)
     @Column(name = "book_id")
     private Integer bookId;
 
